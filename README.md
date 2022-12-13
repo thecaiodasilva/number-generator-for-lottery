@@ -1,1 +1,1 @@
-# number-generator-for-lottery
+# number generator for lottery
