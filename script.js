@@ -1,18 +1,23 @@
-let a;
-let b;
-let c;
-let d;
-let e;
-let f;
+let numbers = [];
 
-document.getElementById('rollButton').onclick = function(){
+function getRandomNumber() {
+    let randomNumber = Math.floor(Math.random() * 60) + 1;
+    if (numbers.includes(randomNumber)) {
+        return getRandomNumber();
+    }
+    numbers.push(randomNumber);
+    return randomNumber;
+}
 
-    a =Math.floor(Math.random() * 60) + 1;
-    b =Math.floor(Math.random() * 60) + 1;
-    c =Math.floor(Math.random() * 60) + 1;
-    d =Math.floor(Math.random() * 60) + 1;
-    e =Math.floor(Math.random() * 60) + 1;
-    f =Math.floor(Math.random() * 60) + 1;
+document.getElementById('rollButton').onclick = function() {
+    numbers = [];
+
+    let a = getRandomNumber();
+    let b = getRandomNumber();
+    let c = getRandomNumber();
+    let d = getRandomNumber();
+    let e = getRandomNumber();
+    let f = getRandomNumber();
 
     document.getElementById("sorte1").innerHTML = a;
     document.getElementById("sorte2").innerHTML = b;
@@ -20,5 +25,4 @@ document.getElementById('rollButton').onclick = function(){
     document.getElementById("sorte4").innerHTML = d;
     document.getElementById("sorte5").innerHTML = e;
     document.getElementById("sorte6").innerHTML = f;  
-}
-
+};
