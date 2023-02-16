@@ -1,5 +1,9 @@
 # Number generator for lottery
-Utilizando uma função auxiliar para gerar um número aleatório único a cada vez que for chamada:
+Este é um projeto simples de JavaScript que gera seis números aleatórios para serem usados como "números da sorte". O usuário pode clicar em um botão para gerar novos números a cada vez. O projeto é útil para quem precisa de um conjunto aleatório de números para jogos de azar, sorteios, ou para qualquer outra finalidade que envolva números aleatórios.
+<br>
+O código usa a função Math.random() para gerar números aleatórios entre 1 e 60. Para garantir que todos os números sejam únicos, o código usa uma função auxiliar que verifica se o número já foi gerado antes. Se o número já existe, a função é chamada novamente até que um número único seja gerado.
+<br>
+Este projeto pode ser facilmente customizado para gerar um número diferente de números, ou para gerar números em um intervalo diferente. O código é simples e fácil de entender, tornando-o uma ótima base para quem quer aprender a trabalhar com JavaScript.
 <br>
 # Inicialização do array numbers:
 ``` 
